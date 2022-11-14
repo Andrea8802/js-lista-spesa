@@ -16,6 +16,6 @@ const listaSpesa = ["mele", "farina", "uova", "latte", "cereali"];
 // Ciclo while per importare la lista della spesa
 let i = 0;
 while (i < listaSpesa.length){
-    lista.innerHTML += `<li class="articolo">${listaSpesa[i]}</li>`
-    i++
+    lista.innerHTML += `<li class="articolo">${listaSpesa[i]}</li>`;
+    i++;
 }
