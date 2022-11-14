@@ -26,9 +26,12 @@ while (i < listaSpesa.length){
     i++;
 }
 
+// Bottone aggiungi
 aggiungi.addEventListener("click",
     function(){
         let nuovoElemento = inputAggiungi.value;
+
+        // Condizione che verifica se il campo è compilato
         if (nuovoElemento != ""){
             listaSpesa.push(nuovoElemento);
 
@@ -41,8 +44,11 @@ aggiungi.addEventListener("click",
     
 )
 
+// Bottono elimina
 elimina.addEventListener("click",
     function(){
+        
+        // Condizione che verifica se sono presenti degli elementi nella lista
         if (listaSpesa.length > 0){
             listaSpesa.pop();
             lista.innerHTML = null;
@@ -52,6 +58,9 @@ elimina.addEventListener("click",
                 lista.innerHTML += `<li>${listaSpesa[i]}</li>`;
                 i++;
             }
+
+        } else{
+            alert("Non ci sono più elementi da eliminare!");
         }
     }
 )

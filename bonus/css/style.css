@@ -1,3 +1,4 @@
+/* General Rules */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Header Rules */
 header{
     height: 90px;
     background-color: blue;
@@ -17,6 +19,8 @@ header{
     align-items: center;
     font-size: 25px;
 }
+
+/* Main Rules */
 
 .container{
     width: 80%;
